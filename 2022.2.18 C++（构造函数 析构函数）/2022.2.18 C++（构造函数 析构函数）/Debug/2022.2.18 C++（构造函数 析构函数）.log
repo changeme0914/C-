@@ -1,0 +1,14 @@
+﻿生成启动时间为 2022/3/18 8:39:07。
+     1>项目“E:\C语言 C++\2022.2.18 C++（构造函数 析构函数）\2022.2.18 C++（构造函数 析构函数）\2022.2.18 C++（构造函数 析构函数）.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "日期.cpp"
+         日期.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\C语言 C++\2022.2.18 C++（构造函数 析构函数）\Debug\2022.2.18 C++（构造函数 析构函数）.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\C语言 C++\2022.2.18 C++（构造函数 析构函数）\Debug\2022.2.18 C++（构造函数 析构函数）.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\C语言 C++\2022.2.18 C++（构造函数 析构函数）\Debug\2022.2.18 C++（构造函数 析构函数）.lib" /MACHINE:X86 "Debug\日期.obj"
+     1>日期.obj : error LNK2019: 无法解析的外部符号 "void __cdecl fn(class Tdate)" (?fn@@YAXVTdate@@@Z)，该符号在函数 _main 中被引用
+     1>E:\C语言 C++\2022.2.18 C++（构造函数 析构函数）\Debug\2022.2.18 C++（构造函数 析构函数）.exe : fatal error LNK1120: 1 个无法解析的外部命令
+     1>已完成生成项目“E:\C语言 C++\2022.2.18 C++（构造函数 析构函数）\2022.2.18 C++（构造函数 析构函数）\2022.2.18 C++（构造函数 析构函数）.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:00.59
