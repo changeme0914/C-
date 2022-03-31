@@ -84,5 +84,9 @@ LINK32=link.exe
 
 SOURCE=.\0329main.cpp
 # End Source File
+# Begin Source File
+
+SOURCE=.\dad.cpp
+# End Source File
 # End Target
 # End Project
