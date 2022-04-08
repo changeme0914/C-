@@ -1,0 +1,182 @@
+///////////
+//name.h
+class Name  
+{
+public:
+	Name(char *);
+	void N_Out();
+	~Name();
+protected:
+	char * pname;
+
+};
+///////////
+//name.cpp
+//#include "Name.h"  多文件需要单文件不需要
+#include <cstring>
+#include<iostream>
+using namespace std;
+//////////////////////////////////////////////////////////////////////
+
+Name::Name(char *name)
+{
+	pname=new char[strlen(name)+1];
+	strcpy(pname,name);
+}
+
+void Name::N_Out()
+{
+	cout<<pname<<endl;
+}
+
+Name::~Name()
+{
+	//delete []pname;
+	//pname=NULL;
+
+}
+
+
+//////////////
+//Tbirth.h
+class Tbirth  
+{
+public:
+	Tbirth();
+	Tbirth(int);
+	Tbirth(int,int);
+	void Disp();
+protected:
+	int year;
+	int month;
+
+};
+//////////////
+//Tbirth.cpp
+//#include "Tbirth.h"  多文件需要单文件不需要
+//#include<iostream>
+//using namespace std;
+
+Tbirth::Tbirth()
+{
+	year=2022;
+	month=4;
+}
+
+Tbirth::Tbirth(int y)
+{
+	year=y;
+	month=1;
+}
+
+Tbirth::Tbirth(int y,int m)
+{
+	year=y;
+	month=m;
+}
+
+void Tbirth::Disp()
+{
+	cout<<month<<"/"<<year<<endl;
+}
+
+/////////////////////
+//Student.h
+class Student  
+{
+public:
+	Student();
+	Student(char *);
+	Student(char *,int,int,int);
+	Student(Student &);
+	void Disp();
+	static void stu_num();
+	~Student();
+protected:
+	Name name;
+	Tbirth birth;
+	int age;
+	static int number;
+
+};
+////////////
+//Student.cpp
+//#include "Student.h"  多文件需要单文件不需要
+//#include<iostream>
+//using namespace std;
+
+int Student::number=0;
+Student::Student():name("noname"),birth(2001,12),age(20)
+{
+	number++;
+}
+
+Student::Student(char *sname):name(sname),birth(2002,6),age(19)
+{
+	number++;
+}
+
+Student::Student(char *s_name,int s_year,int s_month,int s_age):name(s_name),birth(s_year,s_month),age(s_age)
+{
+	number++;
+}
+
+Student::Student(Student &s):name(s.name),birth(s.birth),age(s.age)
+{
+	number++;
+}
+
+void Student::stu_num()
+{
+	cout<<number<<endl;
+}
+
+void Student::Disp()
+{
+	name.N_Out();
+	birth.Disp();
+	cout<<age<<endl;
+}
+
+Student::~Student()
+{
+	number--;
+}
+///////////////
+//main.cpp
+//#include "Student.h"  多文件需要单文件不需要
+//#include<cstring>
+//#include<iostream>
+//using namespace std;
+
+void DispStudedntNum()  //随时可以被调用以显示学生人数
+{
+	Student::stu_num();
+}
+//////////////////////////////
+void fn(Student s)
+{
+       s.Disp();
+       DispStudedntNum();
+}
+
+int main()
+{      
+       Tbirth birth1,birth2(1980);
+       birth1.Disp();
+       birth2.Disp();
+       DispStudedntNum();
+       char name1[10],name2[10];
+       int y,m,age;
+       cin>>name1;
+       cin>>name2>>y>>m>>age;
+       Student s1, s2(name1), s3(name2,y,m,age); 
+       DispStudedntNum();
+       s1.Disp();
+       s2.Disp();
+       s3.Disp();
+       fn(s3);
+       DispStudedntNum();
+       return 0;
+}
+
