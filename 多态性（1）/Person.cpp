@@ -1,0 +1,23 @@
+// Person.cpp: implementation of the Person class.
+//
+//////////////////////////////////////////////////////////////////////
+
+#include "Person.h"
+#include <cstring>
+#include<iostream>
+using namespace std;
+//////////////////////////////////////////////////////////////////////
+// Construction/Destruction
+//////////////////////////////////////////////////////////////////////
+
+Person::Person(char *p_name,int p_age)
+{
+	strcpy(name,p_name);
+	age=p_age;
+}
+
+void Person::Disp()
+{
+	cout<<"name:"<<name<<" "<<"age:"<<age<<endl;
+}
+
