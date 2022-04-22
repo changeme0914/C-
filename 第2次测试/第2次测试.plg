@@ -1,0 +1,45 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: 第2次测试 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\JSJ\AppData\Local\Temp\RSPD31E.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/第2次测试.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ  /c 
+"C:\vc6\MyProjects\第2次测试\main.cpp"
+"C:\vc6\MyProjects\第2次测试\Student.cpp"
+"C:\vc6\MyProjects\第2次测试\Teacher.cpp"
+"C:\vc6\MyProjects\第2次测试\Person.cpp"
+"C:\vc6\MyProjects\第2次测试\StuTeacher.cpp"
+]
+Creating command line "cl.exe @C:\Users\JSJ\AppData\Local\Temp\RSPD31E.tmp" 
+Creating temporary file "C:\Users\JSJ\AppData\Local\Temp\RSPD31F.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib  kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/第2次测试.pdb" /debug /machine:I386 /out:"Debug/第2次测试.exe" /pdbtype:sept 
+".\Debug\main.obj"
+".\Debug\Student.obj"
+".\Debug\Teacher.obj"
+".\Debug\Person.obj"
+".\Debug\StuTeacher.obj"
+]
+Creating command line "link.exe @C:\Users\JSJ\AppData\Local\Temp\RSPD31F.tmp"
+<h3>Output Window</h3>
+Compiling...
+main.cpp
+Skipping... (no relevant changes detected)
+Student.cpp
+Teacher.cpp
+Person.cpp
+StuTeacher.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+第2次测试.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
